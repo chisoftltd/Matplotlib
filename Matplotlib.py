@@ -185,28 +185,28 @@ xpoints = np.array([1,30,15,70])
 ypoints = np.array([5,35,20,75])
 zpoints = np.array([15,45,5,50])
 ipoints = np.array([100,15,10,90])
-plt.plot(xpoints, linestyle = 'dotted')
+# plt.plot(xpoints, linestyle = 'dotted')
 # plt.show()
 
-plt.plot(ypoints, linestyle = 'dashed')
+# plt.plot(ypoints, linestyle = 'dashed')
 # plt.show()
 
 # Line Color
-plt.plot(zpoints, color = 'r')
+# plt.plot(zpoints, color = 'r')
 # plt.show()
 
 # Line Width
-plt.plot(ipoints, linewidth = '20.5')
-plt.show()
+# # plt.plot(ipoints, linewidth = '20.5')
+# plt.show()
 
 # Multiple Lines
 y1 = np.array([3, 8, 1, 10])
 y2 = np.array([6, 2, 7, 11])
 
-plt.plot(y1)
-plt.plot(y2)
+# plt.plot(y1)
+# plt.plot(y2)
 
-plt.show()
+# plt.show()
 
 # Matplotlib Scatter
 x = np.random.randint(100, size=(100))
@@ -217,7 +217,7 @@ plt.scatter(x, y, c=colors, cmap='Accent_r')
 
 plt.colorbar()
 
-plt.show()
+# plt.show()
 
 # Size
 x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
@@ -226,12 +226,12 @@ sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
 
 plt.scatter(x, y, s=sizes)
 
-plt.show()
+# plt.show()
 
 # Alpha
 plt.scatter(x, y, s=sizes, alpha=0.5)
 
-plt.show()
+# plt.show()
 
 # Combine Color Size and Alpha
 x = np.random.randint(100, size=(100))
@@ -243,7 +243,7 @@ plt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='nipy_spectral')
 
 plt.colorbar()
 
-plt.show()
+# plt.show()
 
 # Matplotlib Bars
 # Creating Bars
@@ -251,4 +251,30 @@ x = np.array(["A", "B", "C", "D"])
 y = np.array([3, 8, 1, 10])
 
 plt.bar(x,y)
+plt.show()
+
+x = ["APPLES", "BANANAS"]
+y = [400, 350]
+
+plt.bar(x, y)
+plt.show()
+
+# Horizontal Bars
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.barh(x, y)
+plt.show()
+
+# Bar Color
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x, y, color = "red")
+plt.show()
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x, y, color = "hotpink")
 plt.show()
