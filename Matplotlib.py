@@ -285,3 +285,46 @@ x = np.random.normal(170, 10, 250)
 print(x)
 plt.hist(x)
 plt.show()
+
+# Matplotlib Pie Charts
+y = np.array([55, 15, 25, 10])
+plt.pie(y)
+plt.show()
+
+# Labels
+y = np.array([55, 15, 25, 10])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+plt.pie(y, labels= mylabels)
+plt.show()
+
+# Start Angle
+y = np.array([55, 15, 25, 10])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+plt.pie(y, labels= mylabels, startangle = 90)
+plt.show()
+
+# Explode
+y = np.array([55, 15, 25, 10])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+myexplode = [0.2, 0, 0, 0.1]
+plt.pie(y, labels= mylabels, startangle = 90, explode = myexplode)
+plt.show()
+
+# Shadow
+plt.pie(y, labels= mylabels, startangle = 90, explode = myexplode, shadow = True)
+plt.show()
+
+# Colors
+mycolors = ["black", "hotpink", "b", "#4CAF50"]
+plt.pie(y, labels = mylabels, colors = mycolors)
+plt.show()
+
+# Legend
+plt.pie(y, labels = mylabels)
+plt.legend()
+plt.show()
+
+# Legend With Header
+plt.pie(y, labels = mylabels)
+plt.legend(title = "Four Fruits")
+plt.show()
