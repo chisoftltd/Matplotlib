@@ -213,9 +213,9 @@ x = np.random.randint(100, size=(100))
 y = np.random.randint(100, size=(100))
 colors = np.random.randint(100, size=(100))
 
-plt.scatter(x, y, c=colors, cmap='Accent_r')
+# plt.scatter(x, y, c=colors, cmap='Accent_r')
 
-plt.colorbar()
+# plt.colorbar()
 
 # plt.show()
 
@@ -224,12 +224,12 @@ x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
 y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
 sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
 
-plt.scatter(x, y, s=sizes)
+# plt.scatter(x, y, s=sizes)
 
 # plt.show()
 
 # Alpha
-plt.scatter(x, y, s=sizes, alpha=0.5)
+# plt.scatter(x, y, s=sizes, alpha=0.5)
 
 # plt.show()
 
@@ -239,42 +239,49 @@ y = np.random.randint(100, size=(100))
 colors = np.random.randint(100, size=(100))
 sizes = 10 * np.random.randint(100, size=(100))
 
-plt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='nipy_spectral')
+# plt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='nipy_spectral')
 
-plt.colorbar()
+# plt.colorbar()
 
-# plt.show()
+# # plt.show()
 
 # Matplotlib Bars
 # Creating Bars
 x = np.array(["A", "B", "C", "D"])
 y = np.array([3, 8, 1, 10])
 
-plt.bar(x,y)
-plt.show()
+# plt.bar(x,y)
+# plt.show()
 
 x = ["APPLES", "BANANAS"]
 y = [400, 350]
 
-plt.bar(x, y)
-plt.show()
+# plt.bar(x, y)
+# plt.show()
 
 # Horizontal Bars
 x = np.array(["A", "B", "C", "D"])
 y = np.array([3, 8, 1, 10])
 
-plt.barh(x, y)
-plt.show()
+# plt.barh(x, y)
+# plt.show()
 
 # Bar Color
 x = np.array(["A", "B", "C", "D"])
 y = np.array([3, 8, 1, 10])
 
-plt.bar(x, y, color = "red")
-plt.show()
+# plt.bar(x, y, color = "red")
+# plt.show()
 
 x = np.array(["A", "B", "C", "D"])
 y = np.array([3, 8, 1, 10])
 
-plt.bar(x, y, color = "hotpink")
+# plt.bar(x, y, color = "hotpink")
+# plt.show()
+
+# Matplotlib Bars
+x = np.random.normal(170, 10, 250)
+
+print(x)
+plt.hist(x)
 plt.show()
